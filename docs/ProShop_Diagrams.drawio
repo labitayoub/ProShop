@@ -1,0 +1,169 @@
+<mxfile host="65bd71144e">
+    <diagram id="usecase" name="Cas d&#39;Utilisation">
+        <mxGraphModel dx="765" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="system" value="Plateforme ProShop" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f5f5f5;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="40" width="300" height="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc1" value="Explorer le catalogue" style="ellipse;whiteSpace=wrap;html=1;" parent="system" vertex="1">
+                    <mxGeometry x="80" y="50" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc2" value="S&#39;authentifier" style="ellipse;whiteSpace=wrap;html=1;" parent="system" vertex="1">
+                    <mxGeometry x="80" y="120" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc3" value="Acheter un Produit" style="ellipse;whiteSpace=wrap;html=1;" parent="system" vertex="1">
+                    <mxGeometry x="80" y="200" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc4" value="Consulter Bibliothèque" style="ellipse;whiteSpace=wrap;html=1;" parent="system" vertex="1">
+                    <mxGeometry x="80" y="280" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc5" value="Télécharger fichier" style="ellipse;whiteSpace=wrap;html=1;" parent="system" vertex="1">
+                    <mxGeometry x="80" y="360" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc6" value="Créer un Produit" style="ellipse;whiteSpace=wrap;html=1;" parent="system" vertex="1">
+                    <mxGeometry x="80" y="440" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc7" value="Uploader médias" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" parent="system" vertex="1">
+                    <mxGeometry x="80" y="500" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge9" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endFill=0;" parent="system" source="uc6" target="uc7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor_visiteur" value="Visiteur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="100" width="40" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor_acheteur" value="Acheteur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="279" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor_vendeur" value="Vendeur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="470" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="actor_visiteur" target="uc1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="actor_visiteur" target="uc2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="actor_acheteur" target="uc3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="actor_acheteur" target="uc4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="actor_acheteur" target="uc5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="actor_vendeur" target="uc6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge7" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="1" source="actor_acheteur" target="actor_visiteur" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge8" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="1" source="actor_vendeur" target="actor_acheteur" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="class" name="Diagramme de Classes">
+        <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="class_user" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="80" width="180" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="user_attrs" value="+ id: String [PK]&#xa;+ email: String&#xa;+ name: String&#xa;+ role: Role&#xa;+ createdAt: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_user">
+                    <mxGeometry y="26" width="180" height="124" as="geometry"/>
+                </mxCell>
+                <mxCell id="class_product" value="Product" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="80" width="200" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="product_attrs" value="+ id: String [PK]&#xa;+ title: String&#xa;+ description: String&#xa;+ price: Float&#xa;+ category: String&#xa;+ previewUrl: String&#xa;+ fileKey: String&#xa;+ active: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_product">
+                    <mxGeometry y="26" width="200" height="164" as="geometry"/>
+                </mxCell>
+                <mxCell id="class_order" value="Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="360" width="180" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="order_attrs" value="+ id: String [PK]&#xa;+ totalAmount: Float&#xa;+ status: OrderStatus&#xa;+ createdAt: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_order">
+                    <mxGeometry y="26" width="180" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="class_orderitem" value="OrderItem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="360" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="orderitem_attrs" value="+ id: String [PK]&#xa;+ priceAtPurchase: Float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_orderitem">
+                    <mxGeometry y="26" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_u_p" value="" style="endArrow=none;endFill=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="class_user" target="class_product">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_u_p_label" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_u_p">
+                    <mxGeometry x="0.8" relative="1" as="geometry">
+                        <mxPoint y="-10" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_u_p_label2" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_u_p">
+                    <mxGeometry x="-0.8" relative="1" as="geometry">
+                        <mxPoint y="-10" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_u_p_label3" value="Publie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_u_p">
+                    <mxGeometry x="0" relative="1" as="geometry">
+                        <mxPoint y="10" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_u_o" value="" style="endArrow=none;endFill=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="class_user" target="class_order">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_u_o_label" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_u_o">
+                    <mxGeometry x="0.8" relative="1" as="geometry">
+                        <mxPoint x="15" y="0" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_u_o_label2" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_u_o">
+                    <mxGeometry x="-0.8" relative="1" as="geometry">
+                        <mxPoint x="10" y="0" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_u_o_label3" value="Effectue" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_u_o">
+                    <mxGeometry x="0" relative="1" as="geometry">
+                        <mxPoint x="-30" y="0" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_o_oi" value="" style="endArrow=diamond;endFill=1;endSize=16;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="class_order" target="class_orderitem">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_o_oi_label" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_o_oi">
+                    <mxGeometry x="0.8" relative="1" as="geometry">
+                        <mxPoint y="-10" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_o_oi_label2" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_o_oi">
+                    <mxGeometry x="-0.8" relative="1" as="geometry">
+                        <mxPoint y="-15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_oi_p" value="" style="endArrow=none;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="class_orderitem" target="class_product">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_oi_p_label" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_oi_p">
+                    <mxGeometry x="0.8" relative="1" as="geometry">
+                        <mxPoint x="10" y="0" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_oi_p_label2" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_oi_p">
+                    <mxGeometry x="-0.8" relative="1" as="geometry">
+                        <mxPoint x="15" y="0" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel_oi_p_label3" value="Concerne" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_oi_p">
+                    <mxGeometry x="0" relative="1" as="geometry">
+                        <mxPoint x="-30" y="0" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

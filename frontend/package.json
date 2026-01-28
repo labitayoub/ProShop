@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3000",
     "lint": "eslint"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^3.8.0",
+    "lucide-react": "^0.575.0",
     "next": "16.1.5",
     "react": "19.2.3",
     "react-dom": "19.2.3"
