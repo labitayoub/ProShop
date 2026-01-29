@@ -91,17 +91,3 @@ NEXT_PUBLIC_API_URL="http://localhost:3001"
 npm run dev
 ```
 Le Frontend écoutera sur `http://localhost:3000`.
-
----
-
-## 📚 Documentation Détaillée
-Si vous souhaitez comprendre en détail la logique d'implémentation de la sécurité et des fonctionnalités, rendez-vous dans le dossier `/docs/` à la racine de ce projet :
-- [Guide Etape 1 & 2 : Base de données & Auth0](docs/guide_etape_1_et_2.md)
-- [Guide Etape 3 : Gestion de Produits en Local (S3 off)](docs/guide_etape_3.md)
-- [Guide Etape 4 : Le Catalogue et la vitrine](docs/guide_etape_4.md)
-- [Guide Etape 5 : L'achat en 1 clic et les téléchargements proxyfiés](docs/guide_etape_5.md)
-- [Guide Tests : Documentation des tests unitaires (NestJS & Prisma)](docs/guide_tests.md)
-- [📊 Architectures et Diagrammes (Classes & Cas d'Utilisation)](docs/diagrammes.md)
-
----
-*Projet développé avec passion pour la création d'écosystèmes sécurisés.*
